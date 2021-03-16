@@ -10,7 +10,7 @@ class Person {
   setName(name) {return this.name;}
   setAge(age) {return this.age;}
 
-  static greeting(person) {
-    console.log(`Hi my name is ${person.name}, and I am ${person.age} years old.`)
+  greeting () {
+    console.log(`Hi my name is ${this.name}, and I am ${this.age} years old.`)
   }
 }
