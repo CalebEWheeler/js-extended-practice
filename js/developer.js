@@ -8,7 +8,7 @@ class Developer extends Person {
 
   setLanguages(languages) {return languages;}
 
-  static code(developer) {
-    console.log(`The languages I regularly work with are ${developer.languages}.`);
+  whatLanguages () {
+    console.log(`The languages I regularly work with are ${this.languages}.`);
   }
 }
