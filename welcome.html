@@ -8,4 +8,13 @@
     <h2>Welcome To JS Classes Intro!</h2>
   </body>
   <script src="js/person.js"></script>
+  <script src="js/developer.js"></script>
+  <script>
+    let person1 = new Person("Caleb", 26);
+    Person.greeting(person1);
+
+    let developer1 = new Developer("Cory", 27, ["HTML, CSS, JavaScript, Java, MySQL"]);
+    Developer.greeting(developer1);
+    Developer.code(developer1);
+  </script>
 </html>

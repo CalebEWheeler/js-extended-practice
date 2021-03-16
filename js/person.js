@@ -11,10 +11,6 @@ class Person {
   setAge(age) {return this.age;}
 
   static greeting(person) {
-    return ("Hi my name is " + person.name + ", and I am " + person.age + " years old.")
+    console.log(`Hi my name is ${person.name}, and I am ${person.age} years old.`)
   }
 }
-
-let person1 = new Person("Caleb", 26);
-
-console.log(Person.greeting(person1));
