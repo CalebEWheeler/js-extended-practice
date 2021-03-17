@@ -13,11 +13,11 @@ class Developer extends Employee {
   }
 
   greeting() {
-    console.log(`Hi my name is ${this.name}, and I am ${this.age} years old. I work in ${this.department}, and the languages I regularly use are ${this.languages}.`)
+    return `Hi my name is ${this.name}, and I am ${this.age} years old. I work in ${this.department}, and the languages I regularly use are ${this.languages}.`;
   }
 
   doWork () {
-    console.log(`${this.name} is coding`)
+    return `${this.name} is coding`;
   }
 }
 

@@ -13,9 +13,9 @@ class Accountant extends Employee {
   setAge(age) {return this.age;}
   setDepartment(department) {return this.department;}
 
-  greeting() {console.log(`Hi my name is ${this.name}, and I am ${this.age} years old. I work in ${this.department}.`)}
+  greeting() {return `Hi my name is ${this.name}, and I am ${this.age} years old. I work in ${this.department}.`;}
 
   doWork() {
-    console.log(`${this.name} is crunching numbers.`)
+    return `${this.name} is crunching numbers.`;
   }
 }

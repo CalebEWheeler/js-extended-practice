@@ -14,6 +14,8 @@ class Employee extends Person {
   setAge(age) {return this.age;}
   setDepartment(department) {return this.department;}
 
-  greeting() {console.log(`Hi my name is ${this.name}, and I am ${this.age} years old. I work in ${this.department}.`)}
+  greeting() {return `Hi my name is ${this.name}, and I am ${this.age} years old. I work in ${this.department}.`;}
+
+  doWork() {return `Work, work, work...`}
 
 }

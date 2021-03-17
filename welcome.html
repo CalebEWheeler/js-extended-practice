@@ -6,6 +6,12 @@
   </head>
   <body>
     <h2>Welcome To JS Classes Intro!</h2>
+    <br>
+    <br>
+    <div id="person"></div>
+    <div id="employee"></div>
+    <div id="developer"></div>
+    <div id="accountant"></div>
   </body>
   <script src="js/person.js"></script>
   <script src="js/employee.js"></script>
@@ -13,17 +19,29 @@
   <script src="js/accountant.js"></script>
   <script>
     let person1 = new Person("Caleb", 26);
-    person1.greeting();
-
     let employee1 = new Employee("Jess", 28, "Customer Service")
-    employee1.greeting();
-
     let developer1 = new Developer("Cory", 27, "Software Development",["HTML, CSS, JavaScript, Java, MySQL"]);
-    developer1.greeting();
-    developer1.doWork();
-
     let accountant1 = new Accountant("Jeff", 33, "Accounting");
+
+    person1.greeting();
+    employee1.greeting();
+    developer1.greeting();
     accountant1.greeting();
+
+    developer1.doWork();
     accountant1.doWork();
+
+    const htmlTemplate = (individual) => {
+      
+      return `<h4>${individual.greeting()}</h4>
+              <div>
+                <p>${individual.doWork()}</p>
+              </div>`  
+    }
+
+    // document.getElementById('person').innerHTML = htmlTemplate(person1);
+    document.getElementById('employee').innerHTML = htmlTemplate(employee1);
+    document.getElementById('developer').innerHTML = htmlTemplate(developer1);
+    document.getElementById('accountant').innerHTML = htmlTemplate(accountant1);
   </script>
 </html>
