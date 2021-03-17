@@ -8,13 +8,22 @@
     <h2>Welcome To JS Classes Intro!</h2>
   </body>
   <script src="js/person.js"></script>
+  <script src="js/employee.js"></script>
   <script src="js/developer.js"></script>
+  <script src="js/accountant.js"></script>
   <script>
     let person1 = new Person("Caleb", 26);
     person1.greeting();
 
-    let developer1 = new Developer("Cory", 27, ["HTML, CSS, JavaScript, Java, MySQL"]);
+    let employee1 = new Employee("Jess", 28, "Customer Service")
+    employee1.greeting();
+
+    let developer1 = new Developer("Cory", 27, "Software Development",["HTML, CSS, JavaScript, Java, MySQL"]);
     developer1.greeting();
-    developer1.whatLanguages();
+    developer1.doWork();
+
+    let accountant1 = new Accountant("Jeff", 33, "Accounting");
+    accountant1.greeting();
+    accountant1.doWork();
   </script>
 </html>
