@@ -13,27 +13,37 @@
 
 .cart {
   display: flex;
+  padding: 6px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .fa-shopping-cart {
   font-size: 25px;
-  color: white;
+  color: #007bff;
 }
 
 .cart-count {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 18px;
-  width: 18px;
+  height: 24px;
+  width: 24px;
   font-size: 14px;
   border-radius: 50%;
   background-color: red;
   color: white;
   position: absolute;
-  right: 24px;
-  top: 8px;
+  right: 15px;
+  top: 2px;
 }
-/* #Message {
-  
-} */
+
+.some-button {
+  margin: 0 10px;
+  padding: 5px 15px;
+  border: 2px solid rgb(0, 146, 146);
+  border-radius: 20px;
+  background-color: teal;
+  color: white;
+}
