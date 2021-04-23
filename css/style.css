@@ -11,6 +11,29 @@
 
 }
 
+.cart {
+  display: flex;
+}
+
+.fa-shopping-cart {
+  font-size: 25px;
+  color: white;
+}
+
+.cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 18px;
+  font-size: 14px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  position: absolute;
+  right: 24px;
+  top: 8px;
+}
 /* #Message {
   
 } */

@@ -1,3 +1,4 @@
+//Test cases for Message()
 describe('Message', function() {
   it('Should be a defined function', function() {
     expect(typeof Message).toBe('function');
@@ -7,3 +8,6 @@ describe('Message', function() {
     expect(Message()).toEqual('Welcome to the page where we will handle DOM events!');
   })
 })
+
+
+// describe('')
