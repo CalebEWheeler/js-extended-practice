@@ -26,3 +26,8 @@ $('#add-to-cart').click(() => {
   itemsInCart++;
   $('#cart-count').attr('class', 'cart-count').text(itemsInCart);
 })
+
+$('#clear-cart').click(() => {
+  itemsInCart = 0;
+  $('#cart-count').removeAttr('class', 'cart-count').text("");
+})
