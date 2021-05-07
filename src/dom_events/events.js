@@ -1,3 +1,5 @@
+let searchInput = "";
+
 $(document).ready(() => {
 
   //Practice inserting a string value into an HTML element established a function with a value. Then I use jQuery's 'append()' function to append the output of the function 'Message()' to the element with an id of 'Message'.
@@ -35,7 +37,17 @@ $(document).ready(() => {
     $('#cart-count').removeAttr('class', 'cart-count').text("");
   })
 
+  $('#search').keyup((event) => {
+    // console.log("hi")
+    if(event.keyCode === 13) {
+      searchInput = $('#search').val();
+      console.log(searchInput);
+    }
+    
+  })
+
   $(document).on('click', '#search-submit', () => {
-    console.log($('#search').val());
+    searchInput = $('#search').val();
+    console.log(searchInput);
   })
 })
