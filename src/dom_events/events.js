@@ -38,7 +38,7 @@ $(document).ready(() => {
   })
 
   $('#search').keyup((event) => {
-    // console.log("hi")
+    
     if(event.keyCode === 13) {
       searchInput = $('#search').val();
       createMsg();
