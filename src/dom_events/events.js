@@ -6,7 +6,7 @@ $(document).ready(() => {
   const Message = () => {
     return 'Welcome to the page where we will handle DOM events!';
   }
-  $('#Message').append(Message());
+  
 
 
 
@@ -41,13 +41,23 @@ $(document).ready(() => {
     // console.log("hi")
     if(event.keyCode === 13) {
       searchInput = $('#search').val();
-      console.log(searchInput);
+      createMsg();
     }
     
   })
 
   $(document).on('click', '#search-submit', () => {
     searchInput = $('#search').val();
-    console.log(searchInput);
+    createMsg();
   })
+
+  const createMsg = () => {
+    let msg = "";
+
+    msg += `
+      <p>Here are the results for '<em>${searchInput}</em>'</p>
+    `;
+
+    $('.message-box').html(msg);
+  }
 })
